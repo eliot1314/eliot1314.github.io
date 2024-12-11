@@ -1,0 +1,19 @@
+.img-content {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.img-content .image-container {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.img-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

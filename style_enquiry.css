@@ -1,0 +1,93 @@
+.module {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  background: rgb(184, 214, 231);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#enquiry {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(202, 202, 202);
+}
+
+h2 {
+  font-size: 2.5em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: var(--light-text-color);
+  margin-bottom: 30px;
+}
+
+.chat-box {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.chat-content {
+  min-height: 150px;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-input button {
+  background: #00a1e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background: #8ecae4;
+}
+
+@media (max-width: 768px) {
+  .module {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}

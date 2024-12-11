@@ -1,0 +1,81 @@
+/* Course Detail Page */
+#course-detail {
+  padding: 40px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+}
+
+.module {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1500px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: var(--light-text-color);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 1.2em;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  /* Center button */
+  width: 200px;
+  /* Button width */
+}
+
+.btn:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .module {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  ul li {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 1.1em;
+    width: 100%;
+  }
+}

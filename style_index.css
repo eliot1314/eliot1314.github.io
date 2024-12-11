@@ -1,0 +1,112 @@
+/* Grid Container Styles */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  max-width: 1500px;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.grid-item {
+  background: #999;
+  color: #0073e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 2em;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+  filter: 50%;
+}
+
+.grid-item:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+.grid-item a {
+  color: #999;
+  text-decoration: none;
+}
+
+/* Info Section Styles */
+.info-section {
+  max-width: 97%;
+  padding: 5px 20px;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 10px auto;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: white;
+}
+
+.info-section .text-container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Detail Section Styles */
+.detail-section {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-section h3 {
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+.detail-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail-section ul li {
+  margin: 10px 0;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+.detail-section ul li::before {
+  content: "✔";
+  color: #0073e6;
+  margin-right: 10px;
+}
+
+
+.img-content {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.img-content .image-container {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.img-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

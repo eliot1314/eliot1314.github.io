@@ -1,0 +1,79 @@
+/* Container Layout */
+.section-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 40px auto;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+/* For a single rectangle */
+.section {
+  position: relative;
+  flex: 1 1 30%;
+  height: 600px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: bottom 10% center;
+  background-color: white;
+  filter: grayscale(30%);
+
+}
+
+/* Title Style*/
+.section h2 {
+  font-size: 1.8em;
+  color: #0073e6;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+/* Text Style */
+.section p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Overlay link on the entire section */
+.section .overlay-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+  cursor: pointer;
+}
+
+
+.section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Ensuring a website's layout and content adapt seamlessly to different screen sizes and devices */
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .section {
+    flex: 1 1 100%;
+  }
+}

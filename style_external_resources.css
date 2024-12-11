@@ -1,0 +1,73 @@
+/* External Links Page Styles */
+#external-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: var(--light-text-color);
+  margin-bottom: 30px;
+}
+
+.links-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.links-list li {
+  margin: 10px 0;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: #45a2f9;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.links-list a:hover {
+  background-color: #8ecae4;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  #external-links {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .links-list a {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,107 @@
+/* Intro Section */
+.intro {
+  background: #eef;
+  padding: 0 15%;
+  line-height: 1.8;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Business Model Section */
+.business-model {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.business-model ul {
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.business-model ul li {
+  list-style: disc;
+  margin: 10px 0;
+}
+
+.business-model h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* History Section */
+.history {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.history-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.history-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px);
+}
+
+.history-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.history-item p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Partners Section */
+.partners {
+  text-align: center;
+  padding: 20px;
+  background: #eef;
+  border-radius: 8px;
+}
+
+.partners h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.partner-logos img {
+  width: 230px;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}

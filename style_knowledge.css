@@ -1,0 +1,41 @@
+/* Knowledge Section Styles */
+.knowledge_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(40%);
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  height: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Text Container */
+.knowledge_section .text-container {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.knowledge_section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.knowledge_section p {
+  font-size: 1.1em;
+}
+
+
+/* Remove default link styles for entire section links */
+.knowledge_link {
+  text-decoration: none;
+  color: inherit;
+}

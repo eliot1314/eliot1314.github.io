@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Futura';
+  src: url("fonts/FuturaPTBook.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global styles: applicable to all pages. */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Futura', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f4f4;
+}
+
+header {
+  background: #0e1b3c;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #444;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #0e1b3c;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Header Container */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  /* 图标与文字的间距 */
+  padding: 10px;
+}
+
+/* Header Icon */
+.header-icon {
+  width: 100px;
+  /* 图标宽度 */
+  height: 100px;
+  /* 图标高度 */
+  border-radius: 0;
+  /* 如果需要圆形图标 */
+  object-fit: cover;
+  /* 保持图片比例 */
+}
+
+/* Header Text */
+.header-text {
+  text-align: left;
+  /* 文本靠左对齐 */
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 1.8em;
+  /* 标题字体大小 */
+}
+
+.header-text p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+  /* 描述字体大小 */
+  line-height: 1.5;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #0073e6;
+  /* Background color */
+  padding: 10px 20px;
+  display: flex;
+  /* Ensure horizontal alignment */
+  justify-content: space-around;
+  /* Even spacing between items */
+  align-items: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* Main menu list */
+.navbar>ul {
+  list-style: none;
+  /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* Align items horizontally */
+  gap: 20px;
+  /* Add spacing between main items */
+}
+
+/* Main navigation items */
+.navbar li {
+  position: relative;
+  /* Enable positioning for dropdown */
+  padding: 10px 15px;
+  cursor: pointer;
+  /* Change cursor to pointer */
+}
+
+/* Main navigation links */
+.navbar li a {
+  text-decoration: none;
+  /* Remove underline */
+  color: white;
+  /* Text color */
+  font-weight: bold;
+}
+
+/* Hover effect for main navigation */
+.navbar li:hover {
+  background-color: #005bb5;
+  border-radius: 5px;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  /* Position relative to the parent */
+  top: 100%;
+  /* Place below the parent */
+  left: 0;
+  /* Align to the left of the parent */
+  background-color: white;
+  /* Background for dropdown */
+  color: #333;
+  /* Text color */
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Add shadow */
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: none;
+  /* Hide dropdown by default */
+  z-index: 1000;
+  flex-direction: column;
+  /* Ensure vertical alignment */
+}
+
+/* Dropdown menu items */
+.dropdown-menu li {
+  padding: 10px 20px;
+  white-space: nowrap;
+  /* Prevent text wrapping */
+}
+
+/* Dropdown menu links */
+.dropdown-menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu li:hover {
+  background-color: #f4f4f4;
+}
+
+/* Show dropdown on hover */
+.navbar li:hover .dropdown-menu {
+  display: block;
+  /* Show dropdown menu */
+}

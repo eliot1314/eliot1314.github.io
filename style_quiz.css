@@ -1,0 +1,82 @@
+/* Quiz Page Styles */
+#quiz {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5em;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  color: var(--light-text-color);
+  margin-bottom: 30px;
+}
+
+form {
+  width: 100%;
+}
+
+.question {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.question p {
+  font-size: 1.2em;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1em;
+  color: var(--light-text-color);
+}
+
+label input {
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: #00a1e6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.btn:hover {
+  background-color: #8ecae4;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  #quiz {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .btn {
+    font-size: 1.1em;
+    width: 100%;
+  }
+}
