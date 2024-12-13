@@ -189,3 +189,10 @@ footer {
   display: block;
   /* Show dropdown menu */
 }
+
+
+.smaller-text {
+  font-size: 20px;
+  color: grey;
+  opacity: 0.9;
+}

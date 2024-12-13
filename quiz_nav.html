@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Overview</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Container Layout */
+    .section-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin: 40px auto;
+      gap: 20px;
+      max-width: 1000px;
+    }
+
+    /* For a single rectangle */
+    .section {
+      position: relative;
+      flex: 1 1 30%;
+      height: 300px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      background-color: white;
+      background-size: 109%;
+      background-position: center;
+    }
+
+    /* Overlay link on the entire section */
+    .section .overlay-link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: block;
+      cursor: pointer;
+    }
+
+    .section:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Ensuring a website's layout and content adapt seamlessly to different screen sizes and devices */
+    @media (max-width: 768px) {
+      .section-container {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .section {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="image/icon_header.jpg" alt="Logo" class="header-icon">
+      <div class="header-text">
+        <h2>Challenges on Legal & Data-Security IQ</h2>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+
+      <li class="dropdown">
+        <a href="knowledge.html">Knowledge</a>
+        <ul class="dropdown-menu">
+          <li><a href="general_legal_framework.html">General Legal Framework</a></li>
+          <li><a href="cyber_security_strategy.html">Cyber Security Strategies</a></li>
+          <li><a href="informed_consent_and_ethical_data_use.html">Informed Consent & Ethical Data Use</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="courses.html">Toolkit</a>
+        <ul class="dropdown-menu">
+          <li><a href="course_details.html">Courses</a></li>
+          <li><a href="enquiry.html">Reserve an Enquiry</a></li>
+          <li><a href="quiz.html">Quizzes</a></li>
+          <li><a href="external_resources.html">External Resources</a></li>
+        </ul>
+      </li>
+
+      <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="section-container">
+      <!-- Course Section -->
+      <div class="section" style="background-image: url('image/kahoot.png');">
+        <a href="kahootquiz.html" class="overlay-link"></a>
+      </div>
+
+      <!-- Enquiry Section -->
+      <div class="section" style="background-image: url('image/quiz.png');">
+        <a href="quiz.html" class="overlay-link"></a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Lexify Co. All Rights Reserved.</p>
+    <p class="smaller-text">Nothing in this website is intended to be nor should be construed as legal advice.</p>
+    <p class="smaller-text">This is an educational project created by students. Please consult your lawyer for legal
+      advice</p>
+  </footer>
+</body>
