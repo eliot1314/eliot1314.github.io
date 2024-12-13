@@ -68,3 +68,9 @@
   list-style: circle;
   margin-left: 20px;
 }
+
+.highlight {
+
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
